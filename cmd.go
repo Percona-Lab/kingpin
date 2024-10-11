@@ -323,3 +323,8 @@ func (c *CmdClause) HelpLong(help string) *CmdClause {
 	c.helpLong = help
 	return c
 }
+
+func (c *CmdClause) Hide(hide bool) *CmdClause {
+	c.hidden = hide
+	return c
+}
